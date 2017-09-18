@@ -1,4 +1,6 @@
-% InClass1: some simple excerises to get started with MATLAB. Please complete by
+% AW: Looks good. See my comments below. 0.95/1. 
+
+%InClass1: some simple excerises to get started with MATLAB. Please complete by
 % the second class. Answer questions in comments and return assignment via
 % github
 %% numbers vs strings
@@ -100,6 +102,7 @@ oneToTen = 1:10;
 % do each of the following in two different ways, by manipulating the array
 % oneToTen and by defining it concisely from scratch
 
+%AW: these below don't use the oneToTen array. e.g. the first one could be 2*oneToTen. -0.05. 
 % 1. even numbers from two to twenty
 %Xiaotong Lu: m=2:2:20;
 %             m=[2:2:10];m=[m,m+10]
@@ -117,12 +120,14 @@ oneToTen = oneToTen';
 fliplr(oneToTen)
 
 %Xiaotong Lu: In the first command, oneToTen' has already changed the direction of oneToTen which performed a
-%90¡ãvertical rotation in the oneToTen. The command fliplr can realize the
+%90Â¡Ã£vertical rotation in the oneToTen. The command fliplr can realize the
 %horizontal flip of oneToTen, however, this array has become a upright one
 %which contains only one column but 10 rows. The command fliplr can not turn it over. 
 
 %Xiaotong Lu: In order to get the right result, we may use this command:
 % oneToTen=oneToTen'; fliplr(rot90(oneToTen))
+
+%AW: Ok, see also flipud. 
 
 %% matrices, . operator
 
@@ -152,7 +157,7 @@ m2./m1
 %extra credit: explain why this command gives a warning:
 m2/m1
  
-%Xiaotong Lu£ºIn matrix, only if the matrix is the muliple result of other 2
+%Xiaotong LuÂ£ÂºIn matrix, only if the matrix is the muliple result of other 2
 %matrix and one of the 2 matrix have its inverse matrix can the matrix be
 %devided by the other of the two matrix.
 
